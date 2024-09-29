@@ -9,3 +9,13 @@ CREATE TABLE IF NOT EXISTS hospital (
 	contact VARCHAR(7),
 	address VARCHAR(50)
 );
+
+CREATE TABLE IF NOT EXISTS weater (
+	id SERIAL PRIMARY KEY,
+	city VARCHAR(20) NOT NULL,
+	startDate timestamp,
+	endDate timestamp,
+	hight real,
+	low real,
+	status VARCHAR(20)
+);
